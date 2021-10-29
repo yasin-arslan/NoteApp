@@ -39,62 +39,70 @@ namespace NoteApp
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(58, 393);
+            this.btnReturn.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReturn.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnReturn.Location = new System.Drawing.Point(91, 345);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(128, 28);
+            this.btnReturn.Size = new System.Drawing.Size(125, 28);
             this.btnReturn.TabIndex = 0;
             this.btnReturn.Text = "Return To App";
-            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.UseVisualStyleBackColor = false;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(310, 398);
+            this.btnExit.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnExit.Location = new System.Drawing.Point(222, 345);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(111, 23);
+            this.btnExit.Size = new System.Drawing.Size(75, 28);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // form2Title
             // 
-            this.form2Title.Location = new System.Drawing.Point(91, 55);
+            this.form2Title.Location = new System.Drawing.Point(89, 45);
+            this.form2Title.Multiline = true;
             this.form2Title.Name = "form2Title";
-            this.form2Title.Size = new System.Drawing.Size(316, 22);
+            this.form2Title.Size = new System.Drawing.Size(201, 30);
             this.form2Title.TabIndex = 2;
+            this.form2Title.TextChanged += new System.EventHandler(this.form2Title_TextChanged);
             // 
             // form2Note
             // 
-            this.form2Note.Location = new System.Drawing.Point(91, 83);
+            this.form2Note.Location = new System.Drawing.Point(89, 91);
             this.form2Note.Multiline = true;
             this.form2Note.Name = "form2Note";
-            this.form2Note.Size = new System.Drawing.Size(316, 251);
+            this.form2Note.Size = new System.Drawing.Size(201, 248);
             this.form2Note.TabIndex = 3;
             // 
             // selectedTitleLabel
             // 
             this.selectedTitleLabel.AutoSize = true;
-            this.selectedTitleLabel.Location = new System.Drawing.Point(39, 55);
+            this.selectedTitleLabel.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
+            this.selectedTitleLabel.Location = new System.Drawing.Point(5, 44);
             this.selectedTitleLabel.Name = "selectedTitleLabel";
-            this.selectedTitleLabel.Size = new System.Drawing.Size(35, 17);
+            this.selectedTitleLabel.Size = new System.Drawing.Size(78, 31);
             this.selectedTitleLabel.TabIndex = 4;
-            this.selectedTitleLabel.Text = "Title";
+            this.selectedTitleLabel.Text = "Title:";
             // 
             // selectedNoteLabel
             // 
             this.selectedNoteLabel.AutoSize = true;
-            this.selectedNoteLabel.Location = new System.Drawing.Point(36, 83);
+            this.selectedNoteLabel.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold);
+            this.selectedNoteLabel.Location = new System.Drawing.Point(5, 181);
             this.selectedNoteLabel.Name = "selectedNoteLabel";
-            this.selectedNoteLabel.Size = new System.Drawing.Size(38, 17);
+            this.selectedNoteLabel.Size = new System.Drawing.Size(78, 31);
             this.selectedNoteLabel.TabIndex = 5;
-            this.selectedNoteLabel.Text = "Note";
+            this.selectedNoteLabel.Text = "Note:";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 498);
+            this.ClientSize = new System.Drawing.Size(307, 414);
             this.Controls.Add(this.selectedNoteLabel);
             this.Controls.Add(this.selectedTitleLabel);
             this.Controls.Add(this.form2Note);

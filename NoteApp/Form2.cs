@@ -34,5 +34,10 @@ namespace NoteApp
         {
             this.Close();
         }
+
+        private void form2Title_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

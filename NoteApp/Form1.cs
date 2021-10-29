@@ -52,7 +52,7 @@ namespace NoteApp
                 setValueNote = table.Rows[index].ItemArray[1].ToString();
                 Form2 newForm = new Form2();
                 newForm.Show();
-                this.Visible = false;
+                this.Close();
             }
             if(index <= -1)
             {
