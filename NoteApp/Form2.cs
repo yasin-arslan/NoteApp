@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FontAwesome;
 
 namespace NoteApp
 {
@@ -21,18 +22,17 @@ namespace NoteApp
         {
             form2Title.Text = Form1.setValueTitle;
             form2Note.Text = Form1.setValueNote;
+            this.Text = ("Note : " + form2Title.Text);
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 returnForm = new Form1();
-            returnForm.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void form2Title_TextChanged(object sender, EventArgs e)
