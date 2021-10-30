@@ -13,6 +13,7 @@ namespace NoteApp
 {
     public partial class Form2 : Form
     {
+        public static bool shouldReturn = false;
         public Form2()
         {
             InitializeComponent();
@@ -24,20 +25,16 @@ namespace NoteApp
             form2Note.Text = Form1.setValueNote;
             this.Text = ("Note : " + form2Title.Text);
         }
-
         private void btnReturn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void form2Title_TextChanged(object sender, EventArgs e)
         {
-
         }
     }
 }
